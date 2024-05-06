@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Flex-container{
+            background-color: DodgerBlue;
+            display: flex;
+            justify-content: space-around;
+        }
+        .Flex-container>button{
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .demo{
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .demo>img{
+            background-color: transparent;
+            height:350px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        button:hover{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <img id="bulb" src="assets/images/Bulboffpng.png">
+    </div>
+
+    <div class="Flex-container">
+        <button onclick="document.getElementById('bulb').src='assets/images/Bulbon.png'">bulb on</button>
+        <button onclick="document.getElementById('bulb').src='assets/images/Bulboffpng.png'">bulb off</button>
+    </div>
+
+</body>
+</html>
